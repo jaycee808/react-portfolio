@@ -127,6 +127,17 @@ margin-bottom: 1.25rem;
   color: #E3E3E3;
 }
 
+/* about me styles */
+
+#about {
+  width: 90%;
+  height: 80%;
+  margin: 4rem;
+  margin-right: 0px;
+  display: grid;
+  color: #E3E3E3;
+}
+
 /* media queries */
 @media screen and (min-width: 800px) {
 body {
