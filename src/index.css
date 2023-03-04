@@ -59,10 +59,7 @@ margin-bottom: 1.25rem;
 /* home page styles*/
 
 #home {
-  width: 90%;
-  height: 80%;
-  margin: 4rem;
-  margin-right: 0px;
+  margin: 2rem;
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
@@ -130,10 +127,7 @@ margin-bottom: 1.25rem;
 /* about me styles */
 
 #about {
-  width: 90%;
-  height: 80%;
-  margin: 4rem;
-  margin-right: 0px;
+  margin: 2rem;
   display: grid;
   color: #E3E3E3;
 }
