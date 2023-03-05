@@ -1,6 +1,5 @@
 /* Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Familjen+Grotesk:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Familjen+Grotesk:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Syne:wght@400;500;600;700;800&display=swap');
 /* Global Styles */
 *,
 *::after,
@@ -12,7 +11,7 @@ box-sizing: border-box;
 
 body {
 margin: 0;
-font-family: 'Familjen Grotesk', sans-serif;
+font-family: 'Syne', sans-serif;
 background: #000;
 color: #E3E3E3;
 -webkit-font-smoothing: antialiased;
@@ -66,16 +65,15 @@ margin-bottom: 1.25rem;
   color: #E3E3E3;
 }
 
-.vertical-text-name {
-  writing-mode: vertical-lr;
-  transform: rotate(180deg);
+.home-page-number {
+  /* writing-mode: vertical-lr; */
+  /* transform: rotate(180deg); */
   font-size: 7em;
   position: sticky;
-  font-family: 'Familjen Grotesk', sans-serif;
+  font-family: 'Syne', sans-serif;
   font-weight: bold;
   -webkit-text-stroke: 1px #E3E3E3;
   color: transparent;
-  margin-top: 6rem;
 }
 
 .text-one {

@@ -3,7 +3,7 @@ import React from "react";
 function Home() {
     return (
         <div id="home">
-            <div class="vertical-text-name">jamie.</div>
+            <div class="home-page-number">.01</div>
                 <div class="text">
                 <div class="text-one">Hello,</div>
                 <div class="text-two">I'm Jamie Clark.</div>
