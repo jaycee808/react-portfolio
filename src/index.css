@@ -59,7 +59,7 @@ margin-bottom: 1.25rem;
 /* home page styles*/
 
 #home {
-  margin: 2rem;
+  margin: 1rem;
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
@@ -127,7 +127,7 @@ margin-bottom: 1.25rem;
 /* about me styles */
 
 #about {
-  margin: 2rem;
+
   display: grid;
   color: #E3E3E3;
 }
@@ -178,8 +178,6 @@ width: 95vw;
 #navbar {
 display: flex;
 justify-content: space-between;
-padding: 1rem;
-margin: 0 2rem;
 align-items: center;
 }
 
@@ -189,13 +187,31 @@ padding: 0.5rem 2rem;
 display: inline;
 }
 
+
+@media screen and (max-width: 800px) {
+  .nav-item {
+    font-size: 4rem;
+    }
+  }
+
+
 .nav-toggle {
 font-size: 1.5rem;
 background: transparent;
 border-color: transparent;
 cursor: pointer;
-color: #2626F5;
+color: #E3E3E3;
+z-index: 1;
 }
+
+/* @media only screen and (max-width: 800px) {
+  #navbar {
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+  }
+} */
 
 /* .nav-toggle:hover {
 color: #E3E3E3;
@@ -206,24 +222,35 @@ text-decoration: underline;
 } */
 
 .links-container {
-height: 0;
-overflow: hidden;
+  height: 0;
+  overflow: hidden;
 }
 
 .show-container {
-display: grid;
-height: auto;
+  display: grid;
+  height: auto;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  transform: translateX(60%);
+  transition-timing-function: ease-in;
+  max-width: 480px;
+  min-width: 320px;
+  background: linear-gradient(240deg, #000000, #2626F5);
+  width: 40%;
 }
 
 @media screen and (min-width: 800px) {
 .nav-toggle {
-display: none;
+  display: none;
 }
 
 .links-container {
-height: auto !important;
-overflow: visible !important;
-}
+  height: auto !important;
+  overflow: visible !important;
+  }
 }
 
 /* End of CSS */
