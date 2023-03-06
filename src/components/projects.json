@@ -1,0 +1,34 @@
+[
+    {
+        "id": 1,
+        "name": "Weather Dashboard",
+        "image": "",
+        "description": "This application was designed to display the weather forecast for today and the next five days. The application retrieves data from the OpenWeatherMap API.",
+        "sourceCodeUrl": "https://github.com/jaycee808/weather-dashboard",
+        "deployedSite": "https://jaycee808.github.io/weather-dashboard/"
+    },
+    {
+        "id": 2,
+        "name": "Artrek",
+        "image": "",
+        "description": "Access One of the Largest Digital Libraries of European Culture",
+        "sourceCodeUrl": "https://github.com/jaycee808/artrek-jaycee",
+        "deployedSite": "https://artrek.netlify.app/"
+    },
+    {
+        "id": 3,
+        "name": "Sidekick",
+        "image": "",
+        "description": "To Do List Application",
+        "sourceCodeUrl": "https://github.com/jaycee808/sidekick",
+        "deployedSite": "https://jaycee808.github.io/sidekick/"
+    },
+    {
+        "id": 4,
+        "name": "Password Generator",
+        "image": "",
+        "description": "An application to generate a random password",
+        "sourceCodeUrl": "https://github.com/jaycee808/passwordGenerator",
+        "deployedSite": "https://jaycee808.github.io/passwordGenerator/"
+    }
+]
