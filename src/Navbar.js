@@ -1,57 +1,56 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { NavLink } from 'react-router-dom';
 
 function Navbar () {
 
-    const [showLinks, setShowLinks] = useState(false);
-
-    const handleToggle = () => {
-        setShowLinks(!showLinks);
-    };
-    
     return (
         // <div id="navbar">
             <ul id="navbar" className="nav-header">
-                <li className="nav-item">
+                <li id="logo">
                     <NavLink
                     to="/"
+                    end
+                    className={({ isActive }) =>
+                        isActive ?  'nav-link active' : 'nav-link'
+                    }
                     >
-                    <h1>JC</h1>
+                    <h1>Jamie Clark</h1>
                     </NavLink>
                 </li>
-
-                <div
-                className={`links-container ${showLinks ? 'show-container' : ''}`}>
 
                 <li className="nav-item">
                     <NavLink
                     to="about"
+                    className={({ isActive }) =>
+                        isActive ? 'nav-link active' : 'nav-link'
+                    }
                     >
-                    About
+                    about 
                     </NavLink>
                 </li>
-
+                    <li>/</li>
                 <li className="nav-item">
                     <NavLink
                     to="projects"
+                    className={({ isActive }) =>
+                        isActive ? 'nav-link active' : 'nav-link'
+                    }
                     >
-                    Projects
+                    projects
                     </NavLink>
                 </li>
-
+                <li>/</li>
                 <li className="nav-item">
                     <NavLink
                     to="contact"
+                    className={({ isActive }) =>
+                        isActive ? 'nav-link active' : 'nav-link'
+                    }
                     >
-                    Contact
+                    contact
                     </NavLink>
                 </li>
-                </div>
-                <button className="nav-toggle" onClick={handleToggle}>
-                    <i className="fas fa-bars"></i>
-                </button>
             </ul>
-        // </div>
     );
 }
 

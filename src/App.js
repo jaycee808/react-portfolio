@@ -8,7 +8,6 @@ import Contact from './components/pages/Contact';
 
 function App() {
   return (
-    <Router>
       <>
         <Navbar />
         <Routes>
@@ -18,7 +17,6 @@ function App() {
           <Route path="contact" element={<Contact />} />
         </Routes>
       </>
-    </Router>
   );
 }
 
