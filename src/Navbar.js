@@ -28,7 +28,6 @@ function Navbar () {
                     about 
                     </NavLink>
                 </li>
-                    <li>/</li>
                 <li className="nav-item">
                     <NavLink
                     to="projects"
@@ -39,7 +38,6 @@ function Navbar () {
                     projects
                     </NavLink>
                 </li>
-                <li>/</li>
                 <li className="nav-item">
                     <NavLink
                     to="contact"

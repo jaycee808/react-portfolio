@@ -81,47 +81,62 @@ margin-bottom: 1.25rem;
 /* home page styles */
 
 #home {
-  margin: 2rem;
+  margin: 3rem;
   margin-top: 3rem;
   display: flex;
-  justify-content: flex-start;
+  flex-direction: column;
   color: #E3E3E3;
+  align-items: center;
 }
 
 .home-page-number {
-  font-size: 18rem;
+  font-size: 25rem;
   position: absolute;
-  margin-left: 46rem;
+  margin-left: 22rem;
   font-family: 'Syne', sans-serif;
   font-weight: bold;
-  -webkit-text-stroke: 1px #E3E3E3;
-  color: transparent;
+  align-items: flex-end;
+  -webkit-text-stroke: 1px #333;
+  z-index: 1;
+  
+	-webkit-background-clip: text;
+	background-clip: text;
+	background-image: url('./assets/images/08.jpg');
+	color: transparent;
 }
 
 .text-one {
   font-size: 2rem;
   color: #E3E3E3;
+  z-index: 2;
+  align-items: center;
 }
 
 .text-two {
+  z-index: 2;
   color: #E3E3E3;
   font-size: 5rem;
   font-weight: 600;
 }
 
 .text-three {
+  grid-area: text-three;
   font-size: 2.5rem;
   margin: 5px 0;
   color: #E3E3E3;
+  z-index: 2;
 }
 
 .text-four {
+  grid-area: text-four;
   font-size: 1.8rem;
   margin: 5px 0;
   color: #E3E3E3;
+  z-index: 2;
 }
 
 .button {
+  width: 16rem;
   margin: 14px 0;
   outline: none;
   padding: 8px 16px;
@@ -133,6 +148,7 @@ margin-bottom: 1.25rem;
   cursor: pointer;
   border: 2px solid transparent;
   transition: all 0.4s ease;
+  z-index: 2;
 }
 
 .button:hover {
