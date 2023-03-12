@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 function Navbar () {
 
@@ -7,7 +7,7 @@ function Navbar () {
         // <div id="navbar">
             <ul id="navbar" className="nav-header">
                 <li id="logo">
-                    <NavLink
+                    <Link
                     to="/"
                     end
                     className={({ isActive }) =>
@@ -15,38 +15,38 @@ function Navbar () {
                     }
                     >
                     <h1>Jamie Clark</h1>
-                    </NavLink>
+                    </Link>
                 </li>
 
                 <li className="nav-item">
-                    <NavLink
+                    <Link
                     to="about"
                     className={({ isActive }) =>
                         isActive ? 'nav-link active' : 'nav-link'
                     }
                     >
                     about 
-                    </NavLink>
+                    </Link>
                 </li>
                 <li className="nav-item">
-                    <NavLink
+                    <Link
                     to="projects"
                     className={({ isActive }) =>
                         isActive ? 'nav-link active' : 'nav-link'
                     }
                     >
                     projects
-                    </NavLink>
+                    </Link>
                 </li>
                 <li className="nav-item">
-                    <NavLink
+                    <Link
                     to="contact"
                     className={({ isActive }) =>
                         isActive ? 'nav-link active' : 'nav-link'
                     }
                     >
                     contact
-                    </NavLink>
+                    </Link>
                 </li>
             </ul>
     );
